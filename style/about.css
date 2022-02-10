@@ -1,0 +1,22 @@
+body {
+    margin: 0px;
+}
+nav {
+    background-color: lightgrey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+}
+.btn{
+    background-color: black;
+    color: white;
+    border: 5px solid black;
+    border-radius: 10px;
+
+}
+hr{
+    margin: 0px;
+}
