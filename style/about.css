@@ -1,22 +1,50 @@
 body {
     margin: 0px;
 }
+
 nav {
     background-color: lightgrey;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+h3 {
+    color: crimson;
+}
+
+h4 {
+    color: red;
+}
+
 a {
     text-decoration: none;
 }
+
+p, form {
+    border: 2px solid black;
+}
+
+form {
+    width: fit-content;
+}
+
+.inline {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
 .btn{
     background-color: black;
     color: white;
     border: 5px solid black;
     border-radius: 10px;
-
 }
+
 hr{
     margin: 0px;
+}
+
+footer{
+    background-color: lightgray;
 }
