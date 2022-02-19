@@ -35,3 +35,29 @@
             console.log(`Hello  ${userName} + (Gender not Correct)`)
         }
     }
+
+    let answerList=[];
+
+    function getAnswers(){
+        alert("Please Answer with yes or no for the Next Questions ");
+        answerList.push(prompt("Is this your first visit? ").toLowerCase());
+        answerList.push(prompt("Do you think our website is good? ").toLowerCase());
+        answerList.push(prompt("Do you like cats? ").toLowerCase());
+        
+    }
+    function checkAnswer (){
+        for(let i=0;i<answerList.length;i++){
+            if (!(answerList[i]=="yes" || answerList[i]=="no")){ 
+                answerList[i] = "Invalid";
+            }  
+        } 
+    }
+    
+    function consoleAnswers (){
+        for(let i=0;i<answerList.length;i++){
+            console.log(i+1 + "- " + answerList[i]);
+        }
+    }
+    getAnswers();
+    checkAnswer();
+    consoleAnswers();
